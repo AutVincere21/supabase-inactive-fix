@@ -18,7 +18,7 @@ jobs:
     environment: prod
     # Only run if the ENABLE_GITHUB_ACTIONS variable is set to 'true'
     # This prevents the workflow from running unintentionally
-    if: env.ENABLE_GITHUB_ACTIONS == 'true'
+    if: vars.ENABLE_GITHUB_ACTIONS == 'true'
 
     steps:
       - name: Checkout repository
